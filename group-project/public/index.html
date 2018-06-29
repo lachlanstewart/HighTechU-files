@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+      <title>EventPro</title>
+      <link rel="stylesheet" href="./css/styleproject1.css">
+      <meta name="EventPro">
+      <meta charset="utf-8">
+      <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <div class="title">
+        <h1>EventPro</h1>
+      </div>
+      <div class="navbar">
+      <ul>
+  <li><a href="loginform.html">Login</a></li>
+  <li><a href="index.html" onclick="logout()" id="logout">Log Out</a></li>
+  <li><a href="profilepage.html" id="profile">Profile</a></li>
+  <li><a href="addeventpage.html" id="addevent">Add Event</a></li>
+      </ul>
+    </div>
+      <div class="events">
+        <h3>Upcoming Events</h3>
+      </div>
+
+      <div class="display" id="eventList">
+
+
+      </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDGPbdn917COwnUQIIFE3cw082P6ZXSLic",
+        authDomain: "eventpro-b0d9e.firebaseapp.c om",
+        databaseURL: "https://eventpro-b0d9e.firebaseio.com",
+        projectId: "eventpro-b0d9e",
+        storageBucket: "eventpro-b0d9e.appspot.com",
+        messagingSenderId: "157345572305"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="./js/project1script.js"></script>
+  </body>
+</html>

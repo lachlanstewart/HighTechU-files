@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    height: 93%;
+    width: 100%;
+}
+h1 {
+    color: rgb(84, 153, 199);
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: 5px rgb(84, 153, 199);
+    border-style: double;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5%;
+    margin: auto;
+}
+h3 {
+    color: rgb(84, 153, 199);
+    font-size: 200%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title {
+    position:fixed;
+    font-size: 220%;
+    top: 5%;
+    left: 46%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+form {
+    padding: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+   float: left;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#addevent {
+  border-right:  1.5px solid rgb(84, 153, 199);
+}
+a {
+  border-top:  1.5px solid rgb(84, 153, 199);
+  border-left:  1.5px solid rgb(84, 153, 199);
+  border-bottom:  1.5px solid rgb(84, 153, 199);
+  text-decoration: none;
+  color: rgb(84, 153, 199);
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgb(255, 255, 255);
+}
+.navbar {
+  position:fixed;
+  left: 47%;
+  top: 30%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.events {
+    position:fixed;
+    display: block;
+    top: 27%;
+    left: 1%;
+}
+
+.display {
+  display: block;
+  position: fixed;
+  white-space: nowrap;
+  top: 39%;
+  left: 1%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  width: 95%;
+  max-height: 400px;
+}
+.post {
+    display: inline-block;
+    border: 3px;
+    border-color: rgb(84, 153, 199);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 250px;
+    padding: 5px;
+}
+
+span {
+    float:left;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 21px
+}
+
+#ename {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    font-size: 175%;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-bottom:2px;
+    padding-top:2px;
+    color: rgba(0,0,0,1);
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.eimage {
+    border: 3px solid rgb(84, 153, 199);
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 1px;
+    width: 200px;
+    height:170px;
+  }
+
+#epeople {
+  margin-top: 2.5px;
+  margin-left: 45px;
+  padding: 2.5px;
+  color: white;
+  font-size: 80%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(84, 153, 199);
+  border: 1.5px solid rgb(84, 153, 199);
+  border-style: outset;
+  border-radius: 5px;
+}
+
+#edate {
+    border: 1.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(84, 153, 199);
+    position: relative;
+    top: 0px;
+    text-align:center;
+    margin-bottom:2px;
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+#egoing {
+    padding: 2.5px;
+    color: white;
+    font-size: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(84, 153, 199);
+    border: 1.5px solid rgb(84, 153, 199);
+    border-style: outset;
+    border-radius: 5px;
+}
+
+#edesc {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -75px;
+    text-align: left;
+    width: 220px;
+    height: 60px;
+    line-height: 20px;
+    white-space: initial;
+    overflow: hidden;
+}
+
+/*Dropdown "see who's going" button*/
+
+/* Dropdown Button */
+.epeople {
+    background-color:rgb(84, 153, 199);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: scroll;
+    max-height: 120px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgb(84, 153, 199);
+}

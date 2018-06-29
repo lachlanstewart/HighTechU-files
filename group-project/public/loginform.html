@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/loginstyle.css">
+
+<!-- JS file for installing Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDGPbdn917COwnUQIIFE3cw082P6ZXSLic",
+    authDomain: "eventpro-b0d9e.firebaseapp.com",
+    databaseURL: "https://eventpro-b0d9e.firebaseio.com",
+    projectId: "eventpro-b0d9e",
+    storageBucket: "eventpro-b0d9e.appspot.com",
+    messagingSenderId: "157345572305"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- Copy the code from Firebase homepage -->
+
+<script src="./js/signup.js"></script>
+</head>
+
+<body>
+<div class="signup-div">
+    <h2>Sign up</h2>
+    <div class="email-input">
+        <label for="signupEmail">Email Address</label>
+        <input id="signupEmail" type="email" placeholder="Enter email">
+    </div>
+    <div class="pw-input">
+        <label for="signupPassword">Password</label>
+        <input  id="signupPassword" type="password" placeholder="Enter password">
+    </div>
+    <br>
+    <label><input id="terms" type="checkbox"> Accept Terms &amp; Conditions</label>
+    <br>
+    <br>
+    <button onclick="signup()">Sign up</button>
+</div>
+
+<br>
+<hr>
+
+<div class="login-div">
+    <h2>Login</h2>
+    <div class="email-input">
+        <label for="loginEmail">Email Address</label>
+        <input id="loginEmail" type="email" placeholder="Enter email">
+    </div>
+    <div class="pw-input">
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" placeholder="Enter password">
+    </div>
+    <br>
+    <button onclick="login()">Login</button> &nbsp;
+    <button onclick="resetPass()">Reset Password</button>
+</div>
+
+</body>
+</html>

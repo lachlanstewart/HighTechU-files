@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>Your Profile</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Custom CSS. Type your CSS code in custom.css file -->
+		<link href="./css/profile.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Actual Page Content -->
+
+        <div class="container" style="max-width: 300px;">
+            <div class="well well-lg">
+                <h2>Current User</h2>
+                <div class="team-six">
+                    <div class="team-member">
+                        <!-- Image -->
+                        <img class="img-responsive" id="populatePhoto" alt="Profile Picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Placeholder_no_text.svg/600px-Placeholder_no_text.svg.png">
+                        <!-- Name -->
+                        <h4 id="populateName">Name</h4>
+                        <span class="deg" id="populateEmail">Email</span>
+                    </div>
+                </div>
+                <hr>
+                <!-- Uncomment line below to get a Populate button -->
+                <!-- <button class="btn btn-color" onclick="populate()">Get Current User</button> &nbsp; -->
+                <button class="btn btn-color" onclick="wall()">Go to wall</button> &nbsp;
+                <button class="btn btn-white" onclick="logout()">Logout</button>
+            </div>
+
+            <div class="well well-lg">
+                <h3>Update User</h3>
+                <div class="form-group">
+                    <label for="updateName">Name</label>
+                    <input class="form-control" id="updateName" type="text" placeholder="No name">
+                </div>
+                <div class="form-group">
+                    <label for="updatePhoto">Photo Url</label>
+                    <input class="form-control" id="updatePhoto" type="text" placeholder="No photo url">
+                </div>
+                <div class="form-group">
+                    <label for="updateEmail">Email address</label>
+                    <input class="form-control" id="updateEmail" type="email" placeholder="No email">
+                </div>
+                <hr>
+                <button class="btn btn-color" id="btnUpdate" onclick="updateUser()">Update User Info</button>
+            </div>
+        </div>
+
+        <!-- Javascript files -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyDGPbdn917COwnUQIIFE3cw082P6ZXSLic",
+    authDomain: "eventpro-b0d9e.firebaseapp.com",
+    databaseURL: "https://eventpro-b0d9e.firebaseio.com",
+    projectId: "eventpro-b0d9e",
+    storageBucket: "eventpro-b0d9e.appspot.com",
+    messagingSenderId: "157345572305"
+          };
+          firebase.initializeApp(config);
+</script>
+
+		<!-- Custom JS. Type your JS code in custom.js file -->
+		<script src="./js/profile.js"></script>
+    </body>
+</html>

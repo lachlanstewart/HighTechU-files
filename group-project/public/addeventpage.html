@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>EventPro</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./css/addeventstyle.css">
+
+</head>
+<body>
+  <div class="title">
+    <h1>Add An Event</h1>
+  </div>
+    <p>Your very own event post is only a few steps away!</p>
+    <button class="wallbutton" onclick="wall()">Go to wall</button>
+      <fieldset>
+        <legend><h3>Event Details</h3></legend>
+        <div class="evtitle">
+        <p>
+          <label>Title of event</label>
+          <input type = "text"
+                 id = "Title"
+                 placeholder = "Your event's title"
+                 maxlength = "14" />
+        </p>
+        </div>
+        <div class="evdt">
+        <p>
+          <label>Date and time</label>
+          <input type = "text"
+                 id = "dateTime"
+                 placeholder = "When is your event?"
+                 maxlength = "15" />
+        </p>
+       </div>
+       <div class="evdesc">
+          <textarea id = "textArea"
+                  rows = "3"
+                  cols = "80"
+                  placeholder= "Describe your event"></textarea>
+        </p>
+      </div>
+      <!--<div>
+          <button class="upload" type="button">Upload Your Image</button>
+      </div>-->
+        </fieldset>
+        <div class="submit">
+        <button onclick="addEvent1()">Create</button>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDGPbdn917COwnUQIIFE3cw082P6ZXSLic",
+          authDomain: "eventpro-b0d9e.firebaseapp.com",
+          databaseURL: "https://eventpro-b0d9e.firebaseio.com",
+          projectId: "eventpro-b0d9e",
+          storageBucket: "eventpro-b0d9e.appspot.com",
+          messagingSenderId: "157345572305"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script src="./js/addevent.js"></script>
+        </body>
+        </html>
